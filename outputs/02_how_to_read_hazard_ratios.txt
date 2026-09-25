@@ -1,0 +1,9 @@
+How to read the hazard ratios in 02_cox_hazard_ratios.csv:
+- HR = 1   -> covariate has no effect on recurrence risk
+- HR > 1   -> covariate INCREASES the hazard (worse prognosis)
+- HR < 1   -> covariate DECREASES the hazard (protective/better prognosis)
+- If the 95% CI for HR crosses 1, the effect is not statistically significant
+
+Example: horThyes HR < 1 would mean hormonal therapy patients have a lower
+recurrence hazard than the no-therapy reference group, after adjusting for
+age, tumor size/grade, nodes, and receptor levels.
